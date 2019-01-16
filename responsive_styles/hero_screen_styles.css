@@ -1,0 +1,39 @@
+﻿/* MEDIA QUERY 0 - 568 */
+
+@media screen and (min-width: 0px) and (max-width: 568px) {
+	.hero_screen {
+		text-align: center;
+		min-height: 700px;
+	}
+
+	.hero_screen .hero_screen_title {
+		margin-top: 100px;
+		text-transform: uppercase;
+		font-size: 41px;
+	}
+
+	.hero_screen .hero_screen_title_description {
+		display: inline-block;
+		margin-top: 50px;
+		white-space: normal;
+	}
+
+	.button.to-feedback-form {
+		min-width: 200px;
+	}
+
+	.to-top {
+		right: 20px;
+		padding: 25px;
+	}
+}
+
+/* MEDIA QUERY 569 - 1024 */
+
+@media screen and (min-width: 569px) and (max-width: 1024px) {
+	.to-top {
+		top: 85%;
+		right: 20px;
+		padding: 25px;
+	}
+}

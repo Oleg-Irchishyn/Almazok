@@ -1,0 +1,211 @@
+﻿/* MEDIA QUERY 0 - 900 */
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+	.diamond-drilling-benefits {
+		position: relative;
+		padding-bottom: 60px;
+	}
+
+	.diamond-drilling-title {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		text-align: center;
+		font-family: 'Roboto-Light', sans-serif;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #253c68;
+	}
+
+	.diamond-benefits-item-group_container {
+		display: flex;
+		justify-content: initial;
+		margin: auto;
+		flex-direction: column;
+	}
+
+	.diamond-benefits-item-group-first,
+	.diamond-benefits-item-group-second {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.diamond-benefits-item1 {
+		position: relative;
+		color: black;
+		font-family: 'Roboto-Regular', sans-serif;
+		margin-bottom: 60px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item1 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item1::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/volume.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	.diamond-benefits-item2 {
+		position: relative;
+		color: black;
+		font-family: 'Roboto-Regular', sans-serif;
+		margin-bottom: 60px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item2 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item2::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/groom.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	.diamond-benefits-item3 {
+		position: relative;
+		color: black;
+		font-family: 'Roboto-Regular', sans-serif;
+		margin-bottom: 60px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item3 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item3::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/brick.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	.diamond-benefits-item4 {
+		position: relative;
+		color: black;
+		font-family: 'Roboto-Regular', sans-serif;
+		margin-top: 100px;
+		margin-bottom: 60px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item4 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item4::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/time.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	.diamond-benefits-item5 {
+		position: relative;
+		font-family: 'Roboto-Regular', sans-serif;
+		color: black;
+		margin-bottom: 60px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item5 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item5::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/crown.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	.diamond-benefits-item6 {
+		position: relative;
+		font-family: 'Roboto-Regular', sans-serif;
+		color: black;
+		margin-bottom: 0px;
+		white-space: pre-line;
+		text-align: center;
+	}
+
+	.diamond-benefits-item6 h3 {
+		margin-bottom: -10px;
+	}
+
+	.diamond-benefits-item6::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: 100px;
+		background: url("../images/aim.png") no-repeat;
+		width: 65px;
+		height: 65px;
+	}
+
+	#boer {
+		max-width: 100%;
+		margin-top: 0px;
+		margin: auto;
+		width: 200px;
+		height: 300px;
+	}
+
+	.diamond-drilling-benefits-bottom {
+		display: block;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		font-size: 17px;
+		color: #fba419;
+		text-align: center;
+		font-family: 'Roboto-Bold', sans-serif;
+	}
+
+	.to-benefits-feedback-form {
+		min-width: 200px;
+	}
+}
+
+/* MEDIA QUERY 901 - 1279 */
+
+@media screen and (min-width: 901px) and (max-width: 1279px) {
+	.diamond-benefits-item-group_container {
+		display: flex;
+		justify-content: space-around;
+		margin: auto;
+	}
+
+	.diamond-benefits-item-group-first,
+	.diamond-benefits-item-group-second {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+		margin-left: 110px;
+	}
+}

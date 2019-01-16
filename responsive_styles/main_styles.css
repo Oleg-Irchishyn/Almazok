@@ -1,0 +1,67 @@
+﻿/* MEDIA QUERY 0 - 1279 */
+
+@media screen and (min-width: 0px) and (max-width: 1279px) {
+	.main #about_us_pic {
+		display: none;
+	}
+
+	.main-title {
+		position: relative;
+		text-align: center;
+		margin: 0;
+		margin-top: 50px;
+		font-family: 'Roboto-Light', sans-serif;
+		font-size: 20px;
+		white-space: normal;
+		text-transform: uppercase;
+		color: #253c68;
+	}
+
+	.main-title-tip {
+		position: relative;
+		display: inline-block;
+		white-space: normal;
+		text-align: center;
+		margin: 0;
+		margin-top: 100px;
+		font-family: 'Roboto-Regular', sans-serif;
+		font-size: 18px;
+		color: #253c68;
+	}
+
+	.main-title-tip::before {
+		top: -60px;
+		left: 20px;
+		background: url("../images/quotes_open.png") no-repeat;
+	}
+
+	.main-title-tip::after {
+		bottom: -60px;
+		right: 20px;
+		background: url("../images/quotes_open.png") no-repeat;
+	}
+
+	.main-title-description {
+		display: inline-block;
+		text-align: center;
+		white-space: normal;
+		font-family: 'Roboto-Bold', sans-serif;
+		margin: 0;
+		margin-top: 100px;
+		font-size: 18px;
+		color: black;
+		margin-bottom: 80px;
+	}
+}
+
+/* MEDIA QUERY 1280 - 1440 */
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+	.main #about_us_pic {
+		float: right;
+		width: 400px;
+		height: 300px;
+		max-width: 100%;
+		margin-right: 10%;
+	}
+}

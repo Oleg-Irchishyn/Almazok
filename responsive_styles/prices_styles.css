@@ -1,0 +1,32 @@
+﻿/* MEDIA QUERY 0 - 900*/
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+	.works-range {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: stretch;
+	}
+
+	.works-range table {
+		margin-bottom: 60px;
+	}
+
+	.works-range-item1, .works-range-item2, .works-range-item3 {
+		border-collapse: collapse;
+		min-width: 250px;
+		width: 290px;
+		margin: auto;
+		min-height: 350px;
+		font-family: 'Roboto-Bold', sans-serif;
+		text-align: center;
+	}
+
+	.price-look {
+		text-align: center;
+		position: relative;
+		margin-top: 60px;
+		margin-bottom: 150px;
+	}
+}
