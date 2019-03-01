@@ -155,7 +155,7 @@
 		margin-bottom: 40px;
 	}
 
-	.portfolio-images-group_container div img {
+	.portfolio-images-group_container div a > img {
 		margin-bottom: 60px;
 	}
 
@@ -163,6 +163,7 @@
 		position: relative;
 		display: flex;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -174,6 +175,7 @@
 		position: relative;
 		display: none;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -185,6 +187,7 @@
 		position: relative;
 		display: none;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -192,7 +195,7 @@
 		width: 100%;
 	}
 
-	.portfolio-images-group img, .portfolio-images-group2 img, .portfolio-images-group3 img {
+	.portfolio-images-group a > img, .portfolio-images-group2 a > img, .portfolio-images-group3 a > img {
 		min-width: 300px;
 		min-height: 256px;
 		max-width: 100%;
@@ -371,7 +374,7 @@
 		margin-bottom: 40px;
 	}
 
-	.portfolio-images-group_container div img {
+	.portfolio-images-group_container div a > img {
 		margin-bottom: 60px;
 	}
 
@@ -379,6 +382,7 @@
 		position: relative;
 		display: flex;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -390,6 +394,7 @@
 		position: relative;
 		display: none;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -401,6 +406,7 @@
 		position: relative;
 		display: none;
 		align-content: stretch;
+		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -408,7 +414,7 @@
 		width: 100%;
 	}
 
-	.portfolio-images-group img, .portfolio-images-group2 img, .portfolio-images-group3 img {
+	.portfolio-images-group a > img, .portfolio-images-group2 a > img, .portfolio-images-group3 a > img {
 		min-width: 300px;
 		min-height: 256px;
 		max-width: 100%;

@@ -18,6 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 <link rel="stylesheet" href="slick.css">
 <link rel="stylesheet" href="slick-theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"/>
 <link href="style.css" rel="stylesheet">
 <link href="responsive_styles/header_styles.css" rel="stylesheet">
 <link href="responsive_styles/feedback_forms_styles.css" rel="stylesheet">
@@ -31,7 +32,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="responsive_styles/feedbacks_styles.css" rel="stylesheet">
 <link href="responsive_styles/footer_styles.css" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="64x64" href="images/diamond_favicon.png">
-<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script async src="https://code.jquery.com/jquery-2.1.4.js"></script>
 </head>
 
 <body>
@@ -341,23 +343,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2 class="portfolio-title animated fast">ПРОСМОТРИТЕ <strong>ПОРТФОЛИО</strong> НАШИХ РАБОТ</h2>
 
 <div class="portfolio-images-group_container">
-
 <div class="portfolio-images-group animated fast">
-<img class="myImg" alt="Керны" src="portfolio/portf_1.jpg" width="300" height="256">
-<img class="myImg" alt="Диаметр 350 мм,толщина 60 см, кирпич. Сверление осуществлялось с улицы." src="portfolio/portf_2.jpg" width="300" height="256">
-<img class="myImg" alt="Диаметр отверстий 160 мм, толщина 40 см, высота 3.5 м. Из них 3 штуки в кирпиче и 2 шт в монолите." src="portfolio/portf_3.jpg" width="300" height="256">
+ <a data-fancybox="gallery" data-fancybox data-caption="Керны" href="portfolio/portf_1.jpg">
+  <img class="myImg" alt="first image" src="portfolio/portf_1.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Диаметр 350 мм,толщина 60 см, кирпич. Сверление осуществлялось с улицы" href="portfolio/portf_2.jpg">
+  <img class="myImg" alt="second image" src="portfolio/portf_2.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Диаметр отверстий 160 мм, толщина 40 см, высота 3.5 м. Из них 3 штуки в кирпиче и 2 шт в монолите." href="portfolio/portf_3.jpg">
+  <img class="myImg" alt="third image" src="portfolio/portf_3.jpg" width="300" height="256">
+ </a>
 </div>
 
 <div class="portfolio-images-group2 animated fadeInUp fast">
-<img class="myImg" alt="Помещение с готовым ремонтом. Диаметр 130 мм, толщина 50 см, кирпич. Сверление осуществлялось с фасада здания." src="portfolio/portf_5.jpg" width="300" height="256">
-<img class="myImg" alt="Помещение с готовым ремонтом. Диаметр 130 мм, толщина 40 см, газоблок. Сверление осуществлялось с помещения на улицу." src="portfolio/portf_6.jpg" width="300" height="256">
-<img class="myImg" alt="Диаметр 160 мм, бетон. Задача была объединить между собой 4 бетонных колодца. " src="portfolio/portf_7.jpg" width="300" height="256">
+ <a data-fancybox="gallery" data-fancybox data-caption="Помещение с готовым ремонтом. Стена газоблок 40 см + утеплитель ( минвата толщиной 10 см) Диаметр 160 мм" href="portfolio/portf_4.jpg" data-fancybox="images">
+  <img class="myImg" alt="fourth image" src="portfolio/portf_4.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Помещение с готовым ремонтом. Диаметр 130 мм, толщина 50 см, кирпич. Сверление осуществлялось с фасада здания." href="portfolio/portf_5.jpg">
+  <img class="myImg" alt="fifth image" src="portfolio/portf_5.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Помещение с готовым ремонтом. Диаметр 130 мм, толщина 40 см, газоблок. Сверление осуществлялось с помещения на улицу." href="portfolio/portf_6.jpg">
+  <img class="myImg" alt="Sixth image" src="portfolio/portf_6.jpg" width="300" height="256">
+ </a>
 </div>
 
 <div class="portfolio-images-group3 animated fadeInUp fast">
-<img class="myImg" alt="Диаметр 160 мм, толщина 40 см, монолит." src="portfolio/portf_4.jpg" width="300" height="256">
-<img class="myImg" alt="Диаметр 250 мм, толщина 40+25 см, монолит+кирпич." src="portfolio/portf_8.jpg" width="300" height="256">
-<img class="myImg" alt="Диаметр 350 мм, толщина 40 см , фундаментные блоки." src="portfolio/portf_9.jpg" width="300" height="256">
+ <a data-fancybox="gallery" data-fancybox data-caption="Диаметр 160 мм, бетон. Задача была объединить между собой 4 бетонных колодца." href="portfolio/portf_7.jpg">
+  <img class="myImg" alt="Seventh image" src="portfolio/portf_7.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Диаметр 250 мм, толщина 40+25 см, монолит+кирпич." href="portfolio/portf_8.jpg">
+  <img class="myImg" alt="Eighth image" src="portfolio/portf_8.jpg" width="300" height="256">
+ </a>
+ <a data-fancybox="gallery" data-fancybox data-caption="Диаметр 350 мм, толщина 40 см , фундаментные блоки." href="portfolio/portf_9.jpg">
+  <img class="myImg" alt="Ninth image" src="portfolio/portf_9.jpg" width="300" height="256">
+ </a>
 </div>
 </div>
 
@@ -518,6 +537,7 @@ demontazh_kiev@ukr.net
      
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 <script src="slick.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
