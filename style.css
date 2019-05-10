@@ -73,6 +73,31 @@ body {
 	position: relative;
 	display: flex;
 	justify-content: space-around;
+	overflow: hidden;
+}
+
+.page_header_top .page_header_languagepicker {
+	list-style-type: none;
+	position: absolute;
+	right: 20%;
+	top: 0;
+}
+
+.page_header_top .page_header_languagepicker .languagepicker_item a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto-Bold','Times New Roman', sans-serif;
+	font-size: 16px;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.page_header_top .page_header_languagepicker .languagepicker_item a:hover {
+	color: orange;
+}
+
+.page_header_top .page_header_languagepicker .languagepicker_item a:focus {
+	color: orange;
 }
 
 .main_nav {
@@ -467,6 +492,30 @@ body {
 	font-size: 20px;
 	margin-top: -450px;
 	margin-right: 10%;
+}
+
+#ukr-ben-item-first {
+	min-width: 395px;
+}
+
+#ukr-ben-item-second {
+	min-width: 375px;
+}
+
+#ukr-ben-item-third {
+	min-width: 395px;
+}
+
+#eng-ben-item-first {
+	min-width: 360px;
+}
+
+#eng-ben-item-second {
+	min-width: 340px;
+}
+
+#eng-ben-item-third {
+	min-width: 360px;
 }
 
 .benefits-item-first p, .benefits-item-second p, .benefits-item-third p {

@@ -123,6 +123,14 @@
 		height: 65px;
 	}
 
+	#ukr-diamond-ben-item4::before {
+		left: 85px;
+	}
+
+	#eng-diamond-ben-item4::before {
+		left: 70px;
+	}
+
 	.diamond-benefits-item5 {
 		position: relative;
 		font-family: 'Roboto-Regular', sans-serif;
@@ -146,6 +154,14 @@
 		height: 65px;
 	}
 
+	#ukr-diamond-ben-item5::before {
+		left: 85px;
+	}
+
+	#eng-diamond-ben-item5::before {
+		left: 70px;
+	}
+
 	.diamond-benefits-item6 {
 		position: relative;
 		font-family: 'Roboto-Regular', sans-serif;
@@ -167,6 +183,14 @@
 		background: url("../images/aim.png") no-repeat;
 		width: 65px;
 		height: 65px;
+	}
+
+	#ukr-diamond-ben-item6::before {
+		left: 85px;
+	}
+
+	#eng-diamond-ben-item6::before {
+		left: 70px;
 	}
 
 	#boer {

@@ -312,3 +312,19 @@
 		height: 65px;
 	}
 }
+
+/* ADDITIONAL STYLES FOR OTHER LANGUAGES IN THE LANGUAGEPICKER*/
+
+@media screen and (min-width: 0px) and (max-width: 1279px) {
+	#ukr-ben-item-first,
+	#ukr-ben-item-second,
+	#ukr-ben-item-third {
+		min-width: initial;
+	}
+
+	#eng-ben-item-first,
+	#eng-ben-item-second,
+	#eng-ben-item-third {
+		min-width: initial;
+	}
+}
