@@ -1,0 +1,13 @@
+<% var data = {
+    title: "Алмазное сверление"
+  }; %>
+  <%= _.template(require('./../includes/head.html').default)(data) %>
+  <body class="noselect">
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N42JS92"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
+    <%= _.template(require('./../includes/portfolio.html').default)(data) %>
+    <%= _.template(require('./../includes/footer.html').default)(data) %>
+    <%= _.template(require('./../includes/page_end.html').default)(data) %>
