@@ -155,4 +155,26 @@ $(document).ready(function () {
         }
     });
 
+    // MORE IMAGES TO SHOW WHEN MORE PHOTOS BUTTON IS BEING CLICKED
+    var ShowPhotos = $(".show_more_portfolio");
+    var size_photos = $(".portfolio-images-group_container > div").length;
+    var SecondPhotosGroup = $(".portfolio-images-group2");
+    var ThirdPhotosGroup = $(".portfolio-images-group3");
+    var x = 1;
+
+    $(document).ready(function () {
+        size_photos = $(".portfolio-images-group_container > div").length;
+        x = 1;
+        $('.portfolio-images-group_container > div:lt(' + x + ')').show();
+        ShowPhotos.click(function () {
+            x = (x + 1 <= size_photos) ? x + 1 : size_photos;
+            $('.portfolio-images-group_container > div:lt(' + x + ')').show();
+            SecondPhotosGroup.addClass('displayflex');
+            if (x == size_photos) {
+                ThirdPhotosGroup.addClass('displayflex');
+                ShowPhotos.hide();
+            }
+        });
+    });
+
 });
