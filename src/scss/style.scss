@@ -42,8 +42,11 @@ $font-main-second: "Roboto Slab", sans-serif;
 // COMPONENTS
 @import "./components/header";
 @import "./components/burger_menu";
+@import "./components/hero-screen";
+@import "./components/order_procedure";
 @import "./components/portfolio";
 @import "./components/footer";
+@import "./components/forms";
 
 // PAGES
 @import "./pages/main";

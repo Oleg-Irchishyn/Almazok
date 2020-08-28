@@ -1,0 +1,146 @@
+#feedbackModal .modal-dialog {
+    margin: 60px auto;
+}
+
+.feedback-forms-container {
+    @include xs-devices {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.feedback-form {
+    position: relative;
+    padding: 50px;
+    background-color: rgb(249, 249, 249);
+    border-style: none;
+    border-color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: rgba(2, 2, 2, 0.23) 1px 1px 3px 0px;
+    max-width: 100%;
+    z-index: 2000;
+    @include xs-devices {
+       padding: 30px;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+        margin: 3px 0 0 0;
+        padding-left: 90px;
+        @include xs-devices {
+            padding-left: 40px;
+         }
+    }
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="tel"] {
+    display: block;
+    height: 50px;
+    width: 300px;
+    margin: 20px auto 0 auto;
+    border: none;
+    padding-left: 40px;
+    text-align: left;
+    box-shadow: rgba(2, 2, 2, 0.23) 0px -1px 2px 1px;
+    font-size: 16px;
+    font-family: $font-main-second;
+    text-overflow: ellipsis;
+    @include xs-devices {
+      width: 100%;
+      }
+}
+
+.feedback-form input[type="text"] {
+    background-image: url("../../images/avatarform.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.feedback-form input[type="email"] {
+    background-image: url("../../images/mailform.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.feedback-form input[type="tel"] {
+    background-image: url("../../images/mobileform.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.feedback-form button {
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    font-family: $font-main;
+    font-size: 18px;
+    background: #dc424e;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background: orange;
+        color: #fff;
+        transition: 0.2s;
+    }
+}
+
+.feedback-form span {
+    display: block;
+    text-align: center;
+    margin: 0;
+    color: #000;
+    font-size: 26px;
+    font-family: $font-main-second;
+    font-weight: 300;
+}
+
+.close.feedback-form-remover {
+    position: absolute;
+    top: calc(0% - 8px);
+    right: calc(0% - 8px);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #dc424e;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        opacity: 1 !important;
+    }
+}
+
+.feedback-form-remover::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 4px);
+    right: calc(0% + 12px);
+    width: 5px;
+    height: 22px;
+    transform: rotate(45deg);
+    background: white;
+    opacity: 1;
+}
+
+.feedback-form-remover::after {
+    content: "";
+    position: absolute;
+    top: calc(0% + 4px);
+    right: calc(0% + 12px);
+    width: 5px;
+    height: 22px;
+    transform: rotate(135deg);
+    background: white;
+    opacity: 1;
+}

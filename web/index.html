@@ -31,12 +31,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bundle.css"/>
-       <title>Алмазное сверление</title>
+    <title>Алмазное сверление</title>
   </head>
   <body class="noselect">
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N42JS92"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
+       height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <div class="page_header">
     <div class="header_burger animated fast">
@@ -96,34 +96,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
     </div>
 </div>
-    <div class="portfolio container" id="portfolio">
-    <h2 class="order-procedure-title animated fast">ПОРЯДОК НАШЕЙ <strong>РАБОТЫ С ВАМИ</strong>
+    <div class="hero_screen">
+    <div class="container">
+        <h1 class="hero_screen_title animated fast">АЛМАЗНОЕ СВЕРЛЕНИЕ</h1>
+        <b class="hero_screen_title_description animated fast">
+         Современная технология для создания ровных
+         и точных отверстий в стенах, перекрытиях, фундаментах
+        </b>
+        <div class="hero_screen_bottom animated fast">
+            <button class="button to-feedback-form" data-toggle="modal" data-target="#feedbackModal">Сделать заказ</button>
+            <img id="mouse" src="images/mouse.png" alt="scroll">
+        </div>
+    </div>
+</div>
+    <div class="order-procedure container" id="order-procedure">
+<h2 class="order-procedure-title animated fast">ПОРЯДОК НАШЕЙ <strong>РАБОТЫ С ВАМИ</strong>
     </h2>
-    <div class="order-procedure">
-        <p class="order-procedure-item1 animated fast">
+    <div class="order-procedure-item-wrapper">
+        <p class="order-procedure-item order-procedure-item1 animated fast">
           Принимаем заказы
           по телефону, вайберу,
           электронной почте.
         </p>
-        <p class="order-procedure-item2  animated fast">
+        <p class="order-procedure-item order-procedure-item2  animated fast">
           Консультируем по
           интересующим вопросам
           и просчитываем цену.
         </p>
-        <p class="order-procedure-item3  animated fast">
+        <p class="order-procedure-item order-procedure-item3  animated fast">
           Согласовываем все детали
           и оформляем договор.
         </p>
-        <p class="order-procedure-item4  animated fast">
+        <p class="order-procedure-item order-procedure-item4  animated fast">
           Приступаем
           к выполнению задания.
         </p>
-        <p class="order-procedure-item5  animated fast">
+        <p class="order-procedure-item order-procedure-item5  animated fast">
          Вы оплачиваете
          проделанную работу
          и остаетесь довольны.
        </p>
     </div>
+    </div>
+    <div class="portfolio container" id="portfolio">
     <h2 class="portfolio-title animated fast">ПРОСМОТРИТЕ <strong>ПОРТФОЛИО</strong> НАШИХ РАБОТ</h2>
 
     <div class="portfolio-images-group_container">
@@ -166,6 +181,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
     <a title="Больше фотографий" class="show_more_portfolio animated fast">БОЛЬШЕ ФОТОГРАФИЙ ...</a>
 </div>
     <footer class="footer"></footer>
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModallLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content feedback-forms-container">
+            <form action="success.php" class="js-form feedback-form animated fadeInDown fast" id="popupResult">
+                <span class="modal-title">Форма обратной связи</span>
+                <button type="button" class="close feedback-form-remover" data-dismiss="modal" aria-label="Close"></button>
+                <input type="text" name="name" required placeholder="Ваше имя"  class="form-control form__field">
+                <input type="email" name="email" required id="getGA" placeholder="Ваш email"  class="form-control form__field">
+                <input type="tel" name="tel" required placeholder="Ваш телефон"  class="form-control form__field">
+                <button class="btn__red__bottom act font-bold" data-submit>ОТПРАВИТЬ</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <span class="to-top animated fadeInDown fast"></span>
     <script src="js/bundle.js"></script>
 </body>
 </html>

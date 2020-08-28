@@ -77,9 +77,10 @@
 
 .page_header.sticky {
 	position: fixed;
-	background: rgba(146, 148, 153, 0.7);
+	background: rgba(0, 0, 0, 0.7);
 	min-height: 96px;
 	z-index: 1000;
+	top: 0;
 }
 
 .main_nav {

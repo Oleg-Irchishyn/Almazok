@@ -1,0 +1,171 @@
+.order-procedure {
+    position: relative;
+    margin: 40px auto 0 auto;
+    &-title {
+        margin: 0 0 40px 0;
+        text-align: center;
+        font-family: $font-main-second;
+        font-weight: 300;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #253c68;
+        strong {
+            font-family: $font-main-second;
+            font-weight: 700;
+        }
+    }
+}
+
+.order-procedure-item-wrapper {
+    padding: 100px 0 0 0;
+    margin: 0 0 40px 0;
+    color: black;
+    font-family: $font-main-second;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include xs-devices {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include sm-devices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .order-procedure-item {
+        position: relative;
+        white-space: pre-line;
+        width: 33%;
+        margin-bottom: 0;
+        transition: .4s ease;
+        margin-bottom: 150px;
+        cursor: pointer;
+        @include xs-devices {
+            width: 100%;
+            max-width: 320px;
+          
+        }
+        @include sm-devices {
+            width: 100%;
+            max-width: 320px;
+          
+        }
+        &:hover {
+            transform: translateX(20px);
+            transition: .4s ease;
+        }
+    }
+    .order-procedure-item4 {
+        @include xs-devices {
+            margin-bottom: 150px;
+        }
+        @include sm-devices {
+            margin-bottom: 150px;
+        }
+    }
+    .order-procedure-item4,
+    .order-procedure-item5 {
+        margin-bottom: 0;
+    }
+}
+
+.order-procedure-item1::before {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 10px);
+    background: url("../../images/1.png") no-repeat center;
+    width: 60px;
+    height: 70px;
+}
+
+.order-procedure-item1::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 80px);
+    background: url("../../images/man_phone.png") no-repeat center;
+    width: 140px;
+    height: 60px;
+}
+
+.order-procedure-item2::before {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 10px);
+    background: url("../../images/2.png") no-repeat center;
+    width: 60px;
+    height: 75px;
+}
+
+.order-procedure-item2::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 80px);
+    background: url("../../images/man_call.png") no-repeat center;
+    width: 140px;
+    height: 60px;
+}
+
+.order-procedure-item3::before {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 10px);
+    background: url("../../images/3.png") no-repeat center;
+    width: 60px;
+    height: 75px;
+}
+
+.order-procedure-item3::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 80px);
+    background: url("../../images/all_men.png") no-repeat center;
+    width: 140px;
+    height: 60px;
+}
+
+.order-procedure-item4::before {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 10px);
+    background: url("../../images/4.png") no-repeat center;
+    width: 60px;
+    height: 75px;
+}
+
+.order-procedure-item4::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 80px);
+    background: url("../../images/tool.png") no-repeat center;
+    width: 140px;
+    height: 65px;
+}
+
+.order-procedure-item5::before {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 10px);
+    background: url("../../images/5.png") no-repeat center;
+    width: 60px;
+    height: 75px;
+}
+
+.order-procedure-item5::after {
+    content: "";
+    position: absolute;
+    top: calc(0% - 90px);
+    left: calc(0% + 80px);
+    background: url("../../images/credit_card.png") no-repeat center;
+    width: 140px;
+    height: 80px;
+}

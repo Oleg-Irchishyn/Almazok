@@ -69,6 +69,11 @@
 .portfolio-images-group3 a {
     text-decoration: none;
     overflow: hidden;
+    transition: .4s;
+    &:hover {
+        transform: scale(1.1);
+        transition: .4s;
+    }
 
     @include xs-devices {
         max-height: 256px;

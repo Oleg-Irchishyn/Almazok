@@ -98,7 +98,7 @@ $(document).ready(function () {
     })
 
     // TOP ARROW SCROLL TO TOP
-    var TopArrow = $(".to-top");
+    const TopArrow = $(".to-top");
     TopArrow.click(function () {
         $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
@@ -113,7 +113,7 @@ $(document).ready(function () {
         $(this).toggleClass("change");
     });
 
-    //SCROLL ANIMATION FOR HEADER
+       //SCROLL ANIMATION FOR HEADER
     var header = document.querySelector(".page_header");
     var sticky = header.offsetTop;
 
@@ -176,5 +176,4 @@ $(document).ready(function () {
             }
         });
     });
-
 });
