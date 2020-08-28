@@ -1,6 +1,6 @@
 
   <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -105,7 +105,7 @@
         </b>
         <div class="hero_screen_bottom animated fast">
             <button class="button to-feedback-form" data-toggle="modal" data-target="#feedbackModal">Сделать заказ</button>
-            <img id="mouse" src="images/mouse.png" alt="scroll">
+            <img class="lazyload" data-original="images/mouse.png" id="mouse" src="images/mouse.png" alt="scroll">
         </div>
     </div>
 </div>
@@ -144,43 +144,86 @@
     <div class="portfolio-images-group_container">
         <div class="portfolio-images-group animated fast">
             <a class="col-12 col-md-4" data-fancybox="gallery" data-fancybox data-caption="Керны" href="images/portfolio/portf_1.jpg">
-                <img class="myImg" alt="first image" src="images/portfolio/portf_1.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_1.jpg" alt="first image" src="images/portfolio/portf_1.jpg">
             </a>
             <a class="col-12 col-md-4" data-fancybox="gallery" data-fancybox data-caption="Диаметр 350 мм,толщина 60 см, кирпич. Сверление осуществлялось с улицы" href="images/portfolio/portf_2.jpg">
-                <img class="myImg" alt="second image" src="images/portfolio/portf_2.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_2.jpg" alt="second image" src="images/portfolio/portf_2.jpg">
             </a>
             <a class="col-12 col-md-4" data-fancybox="gallery" data-fancybox data-caption="Диаметр отверстий 160 мм, толщина 40 см, высота 3.5 м. Из них 3 штуки в кирпиче и 2 шт в монолите" href="images/portfolio/portf_3.jpg">
-                <img class="myImg" alt="third image" src="images/portfolio/portf_3.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_3.jpg" alt="third image" src="images/portfolio/portf_3.jpg">
             </a>
         </div>
 
         <div class="portfolio-images-group2 animated fadeInUp fast">
             <a class="col-12 col-md-4"  data-fancybox="gallery" data-fancybox data-caption="Помещение с готовым ремонтом. Стена газоблок 40 см + утеплитель ( минвата толщиной 10 см) Диаметр 160 мм" href="images/portfolio/portf_4.jpg" data-fancybox="images">
-                <img class="myImg" alt="fourth image" src="images/portfolio/portf_4.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_4.jpg" alt="fourth image" src="images/portfolio/portf_4.jpg">
             </a>
             <a class="col-12 col-md-4"  data-fancybox="gallery" data-fancybox data-caption="Алмазные коронки" href="images/portfolio/portf_5.jpg">
-                <img class="myImg" alt="fifth image" src="images/portfolio/portf_5.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_5.jpg" alt="fifth image" src="images/portfolio/portf_5.jpg">
             </a>
             <a class="col-12 col-md-4"  data-fancybox="gallery" data-fancybox data-caption="Диаметр 160 мм, железобетон. Задача была объеденить между собой 4 бетонных колодца" href="images/portfolio/portf_6.jpg">
-                <img class="myImg" alt="Sixth image" src="images/portfolio/portf_6.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_6.jpg" alt="Sixth image" src="images/portfolio/portf_6.jpg">
             </a>
         </div>
 
         <div class="portfolio-images-group3 animated fadeInUp fast">
             <a class="col-12 col-md-4"  data-fancybox="gallery" data-fancybox data-caption="Диаметр 160 мм , железобетон. Толщина 40 см" href="images/portfolio/portf_7.jpg">
-                <img class="myImg" alt="Seventh image" src="images/portfolio/portf_7.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_7.jpg" alt="Seventh image" src="images/portfolio/portf_7.jpg">
             </a>
             <a class="col-12 col-md-4"  data-fancybox="gallery" data-fancybox data-caption="Диаметр 250 мм, толщина 40+25 см, монолит+кирпич" href="images/portfolio/portf_8.jpg">
-                <img class="myImg" alt="Eighth image" src="images/portfolio/portf_8.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_8.jpg" alt="Eighth image" src="images/portfolio/portf_8.jpg">
             </a>
             <a class="col-12 col-md-4" data-fancybox="gallery" data-fancybox data-caption="Диаметр 350 мм, толщина 40 см , фундаментные блоки" href="images/portfolio/portf_9.jpg">
-                <img class="myImg" alt="Ninth image" src="images/portfolio/portf_9.jpg">
+                <img class="myImg lazyload" data-original="images/portfolio/portf_9.jpg" alt="Ninth image" src="images/portfolio/portf_9.jpg">
             </a>
         </div>
     </div>
     <a title="Больше фотографий" class="show_more_portfolio animated fast">БОЛЬШЕ ФОТОГРАФИЙ ...</a>
 </div>
-    <footer class="footer"></footer>
+    <div class="page-footer" id="footer">
+    <div class="container">
+        <h2 class="page-footer-title animated fast">НАШИ КОНТАКТЫ</h2>
+
+        <p class="page-footer-title-tip animated fast">Вы можете просмотреть наши контакты или заполнить
+            форму обратной связи, и мы свяжемся с вами в ближайшее время.
+        </p>
+
+        <form action="success.php" class="js-form page-footer-feedback-form animated fast" id="popupResult">
+            <div class="input-wrapper col-12 col-lg-3">
+                <input type="text" name="name" required placeholder="Ваше имя"  class="form-control form__field">
+            </div>
+            <div class="input-wrapper col-12 col-lg-3">
+                <input type="email" name="email" required id="getGA" placeholder="Ваш email"  class="form-control form__field">
+            </div>
+            <div class="input-wrapper col-12 col-lg-3">
+                <input type="tel" name="tel" required placeholder="Ваш телефон"  class="form-control form__field">
+            </div>
+            <button class="btn__red__bottom act font-bold col-12 col-lg-3" data-submit>ОТПРАВИТЬ</button>
+        </form>
+
+        <div class="footer-bottom">
+            <div class="footer-email animated fast">
+                <h3>E-MAIL:</h3>
+                <a href="mailto:almaznoesverlenieok@gmail.com?subject=Mail">almaznoesverlenieok@gmail.com</a>
+            </div>
+
+            <div class="footer-phone animated fast">
+                <h3>ТЕЛЕФОН:</h3>
+                <a title="contacts" href="tel:+380631436166">+38 (063) 143 61 66</a>
+                <p>
+                    <a id="footer_viber" title="contacts" href="tel:+380508047806">+38 (050) 804 78 06</a>
+                    <b>Viber</b>
+                </p>
+            </p>
+        </div>
+
+        <div class="footer-adress animated fast">
+            <h3>АДРЕС:</h3>
+            <p>Украина , Киев</p>
+        </div>
+    </div>
+</div>
+</div>
     <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content feedback-forms-container">
@@ -196,6 +239,15 @@
     </div>
 </div>
     <span class="to-top animated fadeInDown fast"></span>
-    <script src="js/bundle.js"></script>
+    	<div id="loader">
+		<img class="lazyload" data-original="images/ripple.svg" src="images/ripple.svg">
+	</div>
+
+	<div id="overlay">
+    		<div id="thx">
+    			Спасибо! Мы обязательно вам перезвоним
+    		</div>
+   	</div>
+<script src="js/bundle.js"></script>
 </body>
 </html>

@@ -2,7 +2,8 @@
     position: relative;
     text-align: center;
     background: url("../../images/hero_screen_bg.png") no-repeat;
-    min-height: 600px;
+    background-size: cover;
+    min-height: 500px;
     font-family: $font-main;
     padding: 40px 0 0 0;
     &_title {
