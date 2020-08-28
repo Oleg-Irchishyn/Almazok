@@ -1,0 +1,413 @@
+.diamond-drilling-benefits {
+    position: relative;
+    padding-top: 40px;
+}
+
+.diamond-drilling-title {
+    text-align: center;
+    font-family: $font-main-second;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #253c68;
+    margin: 0;
+
+    @include xs-devices {
+        margin: 0 0 40px 0;
+    }
+    @include sm-devices {
+        margin: 0 0 40px 0;
+    }
+    @include md-devices {
+        margin: 0 0 20px 0;
+    }
+    @include lg-devices {
+        margin: 0 0 20px 0;
+    }
+    @include xl-devices {
+        margin: 0 0 20px 0;
+    }
+    strong {
+        font-family: $font-main-second;
+    }
+}
+
+.diamond-benefits-item-group_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 400px;
+    @include md-devices {
+        min-height: 600px;
+    }
+    @include lg-devices {
+        min-height: 600px;
+    }
+    @include xl-devices {
+        min-height: 600px;
+    }
+}
+
+.diamond-benefits-item-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    @include xs-devices {
+        align-items: center;
+    }
+    @include sm-devices {
+        align-items: center;
+    }
+}
+
+.diamond-benefits-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $font-main;
+    color: black;
+    white-space: pre-line;
+    transform: translateY(0);
+    transition: 0.2s;
+    cursor: pointer;
+    @include xs-devices {
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 80px;
+    }
+    @include sm-devices {
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+        margin-bottom: 80px;
+    }
+    @include md-devices {
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    @include lg-devices {
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    @include xl-devices {
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    h3 {
+        font-family: inherit;
+        margin: 0 0 10px 0;
+    }
+    span {
+        font-family: $font-main-second;
+    }
+    &:hover {
+        transform: translateY(20px);
+        transition: 0.2s;
+    }
+}
+
+.diamond-benefits-item-group-second .diamond-benefits-item:last-of-type {
+    @include xs-devices {
+        margin-bottom: 0;
+    }
+    @include sm-devices {
+        margin-bottom: 0;
+    }
+}
+
+.diamond-benefits-item1::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 90px);
+    background: url("../../images/volume.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.diamond-benefits-item2::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 90px);
+    background: url("../../images/groom.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.diamond-benefits-item3::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 90px);
+    background: url("../../images/brick.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.diamond-benefits-item4::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 85px);
+    background: url("../../images/time.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.diamond-benefits-item5::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 85px);
+    background: url("../../images/crown.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.diamond-benefits-item6::before {
+    content: "";
+    position: absolute;
+    top: calc(0% + 5px);
+    left: calc(0% - 85px);
+    background: url("../../images/aim.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    @include xs-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include sm-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include md-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include lg-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include xl-devices {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.boer-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include xs-devices {
+        margin-bottom: 40px;
+    }
+    @include sm-devices {
+        margin-bottom: 40px;
+    }
+    img {
+        display: block;
+        max-width: 300px;
+        height: auto;
+        margin-left: -100px;
+        transform: translateY(0);
+        transition: 0.2s;
+        cursor: pointer;
+        @include xs-devices {
+            margin-left: 0;
+        }
+        @include sm-devices {
+            margin-left: 0;
+        }
+        @include md-devices {
+            margin-left: 30px;
+        }
+        @include lg-devices {
+            margin-left: 30px;
+        }
+        @include xl-devices {
+            margin-left: 30px;
+        }
+        &:hover {
+            transform: translateY(20px);
+            transition: 0.2s;
+        }
+    }
+}
+
+.diamond-drilling-benefits-bottom {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    color: #fba419;
+    text-align: center;
+    font-family: $font-main;
+}
+
+.to-benefits-feedback-form {
+    position: relative;
+    display: block;
+    min-width: 400px;
+    min-height: 60px;
+    margin: auto;
+    font-family: $font-main;
+    font-size: 18px;
+    text-align: center;
+    background-color: #d64851;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 46px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    @include xs-devices {
+        min-width: 290px;
+    }
+    &:hover {
+        background: orange;
+        color: #fff;
+        transition: 0.2s ease;
+    }
+}

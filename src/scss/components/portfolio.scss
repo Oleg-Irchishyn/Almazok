@@ -109,15 +109,14 @@ a.show_more_portfolio {
     margin: auto;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: $font-main-second;
+    font-family: $font-main;
     font-size: 20px;
     transition: 0.4s;
-    cursor: pointer;
-    &:hover,
-    &:focus {
+      cursor: pointer;
+    &:hover {
         transition: 0.4s;
         opacity: 0.7;
         transform: translateX(10px);
-        color: orange;
+        color: #253c68;
     }
 }

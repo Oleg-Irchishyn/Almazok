@@ -137,21 +137,18 @@
     background-image: url("../../images/avatarform.png");
     background-repeat: no-repeat;
     background-position: 10px center;
-  
 }
 
 .page-footer-feedback-form input[type="email"] {
     background-image: url("../../images/mailform.png");
     background-repeat: no-repeat;
     background-position: 10px center;
-   
 }
 
 .page-footer-feedback-form input[type="tel"] {
     background-image: url("../../images/mobileform.png");
     background-repeat: no-repeat;
     background-position: 10px center;
-  
 }
 
 .page-footer button {
@@ -203,26 +200,21 @@
     position: relative;
     font-size: 16px;
     line-height: 1;
+    h3 {
+        font-size: 18px;
+    }
     @include xs-devices {
         text-align: center;
         margin-top: 20px;
-        h3 {
-            font-size: 26px;
-        }
+        font-size: 18px;
     }
     @include sm-devices {
         text-align: center;
         margin-top: 20px;
-        h3 {
-            font-size: 26px;
-        }
     }
     @include md-devices {
         text-align: center;
         margin-top: 20px;
-        h3 {
-            font-size: 26px;
-        }
     }
     p b {
         color: #665cac;
