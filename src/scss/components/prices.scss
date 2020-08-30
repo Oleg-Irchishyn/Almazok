@@ -1,0 +1,164 @@
+.prices {
+  position: relative;
+  background: url("../../images/prices_bg.png") center no-repeat;
+  background-size: cover;
+  padding: 40px 0 40px 0;
+  margin: 40px 0 0 0;
+  @include xs-devices {
+    background: #fff;
+  }
+  &-title {
+    text-align: center;
+    font-family: $font-main-second;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    strong {
+      font-weight: 700;
+      color: orange;
+    }
+    @include xs-devices {
+      color: rgb(36, 47, 88);
+      strong {
+        color: rgb(36, 47, 88);
+      }
+    }
+  }
+}
+
+.works-range {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @include xs-devices {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include sm-devices {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-item {
+    border-collapse: collapse;
+    min-width: 250px;
+    min-height: 350px;
+    font-family: $font-main;
+    text-align: center;
+    @include xs-devices {
+      margin: 0 0 20px 0;
+    }
+    @include sm-devices {
+      margin: 0 0 20px 0;
+    }
+    @include md-devices {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.works-range-item tr:nth-of-type(1) {
+  background-color: rgb(36, 47, 88);
+  min-height: 30px;
+  font-size: 20px;
+  font-family: $font-main-second;
+}
+
+.works-range-item tr:last-of-type {
+  background-color: rgb(36, 47, 88);
+  font-family: $font-main-second;
+  min-height: 50px;
+  font-size: 20px;
+
+  td {
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover {
+      color: orange;
+      transition: 0.2s ease;
+    }
+  }
+}
+
+.works-range-item tr:nth-of-type(2) {
+  background-color: rgb(47, 59, 104);
+}
+
+.works-range-item tr:nth-of-type(2) b {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.works-range-item i {
+  font-family: $font-main-second;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.works-range-item tr:nth-of-type(3),
+.works-range-item tr:nth-of-type(5) {
+  background-color: #f0f1f2;
+  color: #27335c;
+}
+
+.works-range-item tr:nth-of-type(4),
+.works-range-item tr:nth-of-type(6) {
+  background-color: #dddfe0;
+  color: #27335c;
+}
+
+.price-look {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0 0 0;
+  @include xs-devices {
+    margin: 0;
+  }
+  @include sm-devices {
+    margin: 0;
+  }
+  @include md-devices {
+    margin: 0;
+  }
+}
+
+.to-price-look {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #dd911b;
+  font-family: $font-main;
+  font-size: 20px;
+  transition: 0.4s;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+    color: #fff;
+    text-decoration: none;
+    transform: translateX(20px);
+  }
+  &:hover::after {
+    color: #fff;
+    transition: 0.4s;
+  }
+}
+
+.to-price-look::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f063";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 20px);
+  font-size: 20px;
+  transition: 0.4s;
+  color: orange;
+  transform: rotate(270deg);
+}

@@ -1,0 +1,124 @@
+.clients {
+  position: relative;
+  padding-top: 40px;
+  &-title {
+    text-align: center;
+    font-family: $font-main-second;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #253c68;
+    margin: 0;
+    strong {
+      font-weight: 700;
+    }
+  }
+  &-range {
+    margin: 40px 0 0 0;
+    color: #253c68;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+
+    @include xs-devices {
+      margin: 20px 0 0 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include sm-devices {
+      margin: 20px 0 0 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      font-family: $font-main;
+      font-size: 18px;
+      padding: 20px 0 20px 0;
+      cursor: pointer;
+      transition: 0.4s ease;
+      min-height: 190px;
+      overflow: hidden;
+      @include xs-devices {
+        min-height: initial;
+      }
+      @include sm-devices {
+        min-height: initial;
+      }
+
+      i {
+        font-size: 80px;
+        color: orange;
+        z-index: 2;
+      }
+      h2 {
+        font-size: 18px;
+        line-height: 1;
+        margin: 10px 0 10px 0;
+        color: #253c68;
+        z-index: 2;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1;
+        position: relative;
+        white-space: normal;
+        margin: 0;
+        color: #253c68;
+        z-index: 2;
+      }
+      &:hover::before,
+      &:hover::after,
+      &:focus::before,
+      &:focus::after {
+        width: 50.5%;
+        transition: 0.4s ease;
+      }
+      &:hover,
+      &:focus {
+        i {
+          color: #fff;
+        }
+        h2 {
+          color: orange;
+          transition: 0.4s ease;
+        }
+        p {
+          color: orange;
+          transition: 0.4s ease;
+        }
+      }
+    }
+    div::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      background: rgb(37, 60, 104);
+      transition: 0.4s ease;
+      border-top-left-radius: 2em;
+      border-bottom-left-radius: 2em;
+    }
+    div::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 0;
+      background: rgb(37, 60, 104);
+      transition: 0.4s ease;
+      border-top-right-radius: 2em;
+      border-bottom-right-radius: 2em;
+    }
+  }
+}
