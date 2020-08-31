@@ -1,3 +1,4 @@
+
 // FEEDBACK FORM VALIDATION
 $(document).ready(function () {
     $('[data-submit]').on('click', function (e) {
@@ -97,7 +98,7 @@ $(document).ready(function () {
         event.preventDefault();
     })
 
-    // TOP ARROW SCROLL TO TOP
+     // TOP ARROW SCROLL TO TOP
     const TopArrow = $(".to-top");
     TopArrow.click(function () {
         $('html,body').animate({ scrollTop: 0 }, 'slow');
@@ -164,9 +165,7 @@ $(document).ready(function () {
     var SecondPhotosGroup = $(".portfolio-images-group2");
     var ThirdPhotosGroup = $(".portfolio-images-group3");
     var x = 1;
-
-    $(document).ready(function () {
-        size_photos = $(".portfolio-images-group_container > div").length;
+          size_photos = $(".portfolio-images-group_container > div").length;
         x = 1;
         $('.portfolio-images-group_container > div:lt(' + x + ')').show();
         ShowPhotos.click(function () {
@@ -178,5 +177,6 @@ $(document).ready(function () {
                 ShowPhotos.hide();
             }
         });
-    });
+
+        AOS.init();
 });

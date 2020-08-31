@@ -4,9 +4,9 @@ $fa-font-display: swap;
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~bootstrap/scss/bootstrap";
-@import "../js/components/libs/animate.css/animate.min.css";
 @import "../js/components/libs/fancybox/dist/jquery.fancybox.min.css";
 @import "../js/components/libs/slick-carousel/slick/slick.css";
+@import "../js/components/libs/aos/dist/aos.css";
 
 // VARIABLES AND MIXINS
 $font-stack: "Roboto", "Roboto Slab", sans-serif;
