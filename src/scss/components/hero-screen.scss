@@ -68,15 +68,15 @@
 .to-top {
     position: fixed;
     display: none;
-    top: calc(0px + 90%);
-    right: calc(0% + 40px);
+    bottom: 20px;
+    right: 20px;
     border: transparent;
     border-radius: 50%;
     padding: 30px;
     background: url("../../images/topArrow.png") #253c68 no-repeat center;
     transition: 0.2s;
     cursor: pointer;
-    z-index: 200;
+    z-index: 1000;
     &:hover,
     &:focus {
         background: url("../../images/topArrow.png") orange no-repeat center;

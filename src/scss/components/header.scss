@@ -4,14 +4,14 @@
 	align-items: center;
 	background: #070d10;
 	min-height: 98px;
-	width: 100%;
+	max-width: 100%;
 	.page_header_top {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-around;
-		min-height: 96px;
+		min-height: 98px;
 		@include xs-devices {
 			justify-content: space-evenly;
 		}
@@ -20,15 +20,18 @@
 		}
 		@include lg-devices {
 			min-height: 260px;
-			padding: 30px 15px 30px 15px;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 		@include xl-devices {
 			min-height: 260px;
-			padding: 30px 15px 30px 15px;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 		@include xxl-devices {
 			min-height: 260px;
-			padding: 30px 15px 30px 15px;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 		.page_header_languagepicker {
 			display: flex;
@@ -86,9 +89,11 @@
 .page_header.sticky {
 	position: fixed;
 	background: rgba(0, 0, 0, 0.7);
-	min-height: 96px;
 	z-index: 1000;
 	top: 0;
+	left: 0;
+	max-width: 100%;
+	width: 100%;
 }
 
 .main_nav {
@@ -361,7 +366,7 @@
 		align-items: center;
 		.page_header_top {
 			display: none;
-			padding: 30px 15px 10px 15px;
+			
 		}
 	}
 }

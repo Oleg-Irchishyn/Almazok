@@ -177,6 +177,7 @@ $(document).ready(function () {
                 ShowPhotos.hide();
             }
         });
-
+        // AOS animations 
+        
         AOS.init();
 });
