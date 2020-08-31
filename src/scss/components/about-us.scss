@@ -1,0 +1,135 @@
+.about_us {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 15px 40px 15px;
+    &_pic {
+        height: auto;
+        max-width: 100%;
+    }
+    &-title {
+        position: relative;
+        text-align: left;
+        white-space: pre-line;
+        font-family: $font-main-second;
+        font-weight: 300;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #253c68;
+        @include xs-devices {
+            white-space: normal;
+            text-align: center;
+            padding: 0;
+        }
+        @include sm-devices {
+            white-space: normal;
+            text-align: center;
+            padding: 0;
+        }
+        strong {
+            font-weight: 700;
+        }
+    }
+    &-title-tip {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        font-family: $font-main-second;
+        font-size: 20px;
+        line-height: 30px;
+        color: #253c68;
+        align-self: center;
+        @include xs-devices {
+            text-align: center;
+            line-height: 1;
+        }
+        @include sm-devices {
+            text-align: center;
+            line-height: 1;
+        }
+    }
+}
+
+.about_us-content-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 400px;
+    .img-wrapper {
+        position: relative;
+        @include md-devices {
+            align-self: center;
+        }
+        @include lg-devices {
+            align-self: center;
+        }
+    }
+    @include xs-devices {
+        padding: 40px 0 40px 0;
+        min-height: initial;
+    }
+    @include sm-devices {
+        padding: 40px 0 40px 0;
+        min-height: initial;
+    }
+    @include md-devices {
+        padding: 40px 0 40px 0;
+        min-height: initial;
+    }
+}
+
+.about_us-title-tip::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(0% - 20px);
+    left: calc(0% - 20px);
+    background: url("../../images/quotes_open.png") no-repeat;
+    @include xs-devices {
+        left: 0;
+        top: calc(0% - 30px);
+    }
+    @include sm-devices {
+        left: 0;
+        top: calc(0% - 20px);
+    }
+    @include lg-devices {
+        left: 0;
+        top: calc(0% - 20px);
+    }
+}
+
+.about_us-title-tip::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: calc(0% - 20px);
+    right: calc(0% + 20px);
+    background: url("../../images/quotes_open.png") no-repeat;
+    @include xs-devices {
+        bottom: calc(0% - 30px);
+    }
+    @include sm-devices {
+        bottom: calc(0% - 30px);
+    }
+    @include lg-devices {
+        bottom: calc(0% - 30px);
+    }
+}
+
+.about_us-title-description {
+    display: inline-block;
+    font-family: $font-main;
+    font-size: 20px;
+    color: black;
+    @include xs-devices {
+       text-align: center;
+    }
+    @include sm-devices {
+        text-align: center;
+     }
+}

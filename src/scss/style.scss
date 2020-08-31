@@ -39,10 +39,18 @@ $font-main-second: "Roboto Slab", sans-serif;
   }
 }
 
+@mixin xxl-devices {
+  @media screen and (min-width: 1441px) and (max-width: 1660px) {
+    @content;
+  }
+}
+
 // COMPONENTS
 @import "./components/header";
 @import "./components/burger_menu";
 @import "./components/hero-screen";
+@import "./components/about-us";
+@import "./components/benefits";
 @import "./components/diamond-drilling-benefits";
 @import "./components/prices";
 @import "./components/order_procedure";

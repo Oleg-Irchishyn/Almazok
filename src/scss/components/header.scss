@@ -26,6 +26,10 @@
 			min-height: 260px;
 			padding: 30px 15px 30px 15px;
 		}
+		@include xxl-devices {
+			min-height: 260px;
+			padding: 30px 15px 30px 15px;
+		}
 		.page_header_languagepicker {
 			display: flex;
 			flex-wrap: wrap;
@@ -54,6 +58,10 @@
 				min-height: 70px;
 			}
 			@include xl-devices {
+				order: 3;
+				min-height: 70px;
+			}
+			@include xxl-devices {
 				order: 3;
 				min-height: 70px;
 			}
@@ -112,6 +120,10 @@
 		order: 1;
 		width: 100%;
 	}
+	@include xxl-devices {
+		order: 1;
+		width: 100%;
+	}
 	ul {
 		display: flex;
 		justify-content: space-between;
@@ -142,6 +154,12 @@
 			padding: 0 0 30px 0;
 			justify-content: center;
 		}
+		@include xxl-devices {
+			width: 100%;
+			padding: 0 0 30px 0;
+			justify-content: center;
+		}
+		
 	}
 }
 
@@ -204,6 +222,9 @@
 		order: 2;
 	}
 	@include xl-devices {
+		order: 2;
+	}
+	@include xxl-devices {
 		order: 2;
 	}
 	a {
@@ -290,6 +311,9 @@
 		order: 4;
 	}
 	@include xl-devices {
+		order: 4;
+	}
+	@include xxl-devices {
 		order: 4;
 	}
 	a {

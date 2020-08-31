@@ -1,0 +1,150 @@
+.benefits {
+    position: relative;
+    background: url("../../images/benefits_bg.png") center no-repeat;
+    background-size: cover;
+    padding: 40px 0 40px 0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-title {
+      
+        text-align: left;
+        font-family: $font-main-second;
+        font-weight: 300;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        @include xs-devices {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        @include sm-devices {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: 0 0 20px 0;
+        }
+        strong {
+            font-weight: 700;
+            color: orange;
+            margin: 0 0 0 5px;
+            @include xs-devices {
+                margin: 0;
+            }
+            @include sm-devices {
+                margin: 0;
+            }
+        }
+    }
+    &-tip {
+        display: block;
+        text-align: left;
+        font-family: $font-main;
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+        @include xs-devices {
+            text-align: center;
+        }
+        @include sm-devices {
+            text-align: center;
+        }
+    }
+}
+
+.benefits-message-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    @include xs-devices {
+        padding-bottom: 80px;
+    }
+    @include sm-devices {
+        padding-bottom: 80px;
+    }
+}
+
+.benefits-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-item {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: $font-main;
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        transition: 0.4s;
+        cursor: pointer;
+        @include xs-devices {
+            padding: 40px 0 0 0;
+            text-align: center;
+            margin: 0 0 80px 0;
+        }
+        @include sm-devices {
+            padding: 40px 0 0 0;
+            text-align: center;
+            margin: 0 0 80px 0;
+        }
+        h3 {
+            font-size: inherit;
+            color: #fff;
+            font-family: inherit;
+            margin: 0 0 20px 0;
+        }
+        p {
+            font-size: 18px;
+            color: #fff;
+            font-family: inherit;
+            margin: 0;
+        }
+        &:hover {
+            transform: translateX(20px);
+            transition: 0.4s;
+        }
+    }
+    &-item:last-of-type {
+        margin: 0;
+    }
+    &-item::before {
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: calc(0% + 10px);
+        left: calc(0% - 80px);
+        font-size: 45px;
+        color: orange;
+        @include xs-devices {
+            top: calc(0% - 10px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @include sm-devices {
+            top: calc(0% - 10px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-item.competitive::before {
+        content: "\f53c";
+    }
+    &-item.competence::before {
+        content: "\f4ce";
+    }
+    &-item.quality::before {
+        content: "\f164";
+    }
+}
