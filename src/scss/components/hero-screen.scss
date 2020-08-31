@@ -52,8 +52,7 @@
     @include xs-devices {
         min-width: 290px;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         background: orange;
         color: #fff;
         transition: 0.2s;
