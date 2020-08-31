@@ -340,6 +340,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: bottomDrill 2s ease backwards infinite;
     @include xs-devices {
         margin-bottom: 40px;
     }
@@ -351,8 +352,6 @@
         max-width: 300px;
         height: auto;
         margin-left: -100px;
-        transform: translateY(0);
-        transition: 0.2s;
         cursor: pointer;
         @include xs-devices {
             margin-left: 0;
@@ -369,10 +368,10 @@
         @include xl-devices {
             margin-left: 30px;
         }
-        &:hover {
-            transform: translateY(20px);
-            transition: 0.2s;
-        }
+    }
+    &:hover,
+    &:focus {
+        animation: none;
     }
 }
 
@@ -409,5 +408,17 @@
         background: orange;
         color: #fff;
         transition: 0.2s ease;
+    }
+}
+
+@keyframes bottomDrill {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); 
+    }
+    100% {
+        transform: translateY(0); 
     }
 }
