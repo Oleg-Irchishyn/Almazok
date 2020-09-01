@@ -1,6 +1,9 @@
 .diamond-drilling-benefits {
     position: relative;
     padding-top: 40px;
+    &.container {
+        overflow: visible;
+    }
 }
 
 .diamond-drilling-title {
