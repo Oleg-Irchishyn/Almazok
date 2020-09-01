@@ -80,8 +80,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: DEV_MODE,
-              url: false
+              sourceMap: DEV_MODE
             },
           },
           {
@@ -104,19 +103,19 @@ module.exports = {
         test: /\.(png|jpg|jpe?g|gif|svg|webp|ico)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader?limit=1000',
             options: {
-              name: 'images/[name]-[hash].[ext]',
+              name: 'fonts/[name].[ext]',
               publicPath: '/'
             },
-          },
+          }
         ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'url-loader?limit=10000',
+            loader: 'url-loader?limit=5000',
             options: {
               name: 'fonts/[name].[ext]',
               publicPath: '/'
