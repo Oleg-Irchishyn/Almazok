@@ -1,0 +1,22 @@
+<% var data = {
+    title: "Diamond drilling"
+  }; %>
+  <%= _.template(require('./../includes/head.html').default)(data) %>
+  <body class="noselect">
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N42JS92"
+       height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <%= _.template(require('./../includes/eng-site/header.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/hero-screen.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/about-us.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/our_benefits.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/diamond-drilling-benefits.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/prices.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/order-procedure.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/portfolio.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/clients.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/footer.html').default)(data) %>
+    <%= _.template(require('./../includes/eng-site/forms/form.html').default)(data) %>
+    <div class="to-top animated fadeInDown fast"></div>
+    <%= _.template(require('./../includes/eng-site/page_end.html').default)(data) %>
