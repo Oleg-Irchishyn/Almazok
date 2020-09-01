@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const fs = require('fs');
 
@@ -15,22 +15,22 @@ const CSS_CHUNK_NAME = DEV_MODE ? '[name].chunk.css'
 
 const JS_CHUNK_NAME = DEV_MODE ? '[name].chunk.js'
     : '[id][contenthash].chunk.js';
-    
+
 function generateHtmlPlugins(templateDir) {
- const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  return templateFiles.map(item => {
-   const parts = item.split('.');
-   const name = parts[0];
-   const extension = parts[1];
-    return new HtmlWebpackPlugin({
-     filename: `${name}.html`,
-     template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-     inject: false,
-   })
- })
+    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+    return templateFiles.map(item => {
+        const parts = item.split('.');
+        const name = parts[0];
+        const extension = parts[1];
+        return new HtmlWebpackPlugin({
+            filename: `${name}.html`,
+            template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+            inject: false,
+        })
+    })
 }
-          
-const htmlPlugins = generateHtmlPlugins('./src/html/views');     
+
+const htmlPlugins = generateHtmlPlugins('./src/html/views');
 
 module.exports = {
     entry: ['@babel/polyfill', './src/js/index.js', './src/scss/style.scss'],
@@ -79,15 +79,18 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader',
-                        options: {sourceMap: DEV_MODE},
+                        options: {
+                            sourceMap: DEV_MODE,
+                            url: false
+                        },
                     },
                     {
                         loader: "postcss-loader",
-                        options: {sourceMap: DEV_MODE}
+                        options: { sourceMap: DEV_MODE }
                     },
                     {
                         loader: 'resolve-url-loader',
-                        options: {sourceMap: DEV_MODE},
+                        options: { sourceMap: DEV_MODE },
                     },
                     {
                         loader: 'sass-loader',
@@ -98,29 +101,31 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpe?g|png|svg|webp|ico|gif)$/i,
+                test: /\.(png|jpg|jpe?g|gif|svg|webp|ico)$/i,
                 use: [
                     {
-                        loader: 'url-loader?limit=100000',
+                        loader: 'file-loader',
                         options: {
-                            name: 'images/[name].[ext]',
+                            name: 'images/[name]-[hash].[ext]',
                             publicPath: '/'
                         },
-                    }
-                ]
+                    },
+                ],
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 use: [
                     {
-                        loader: 'url-loader?limit=100000',
+                        loader: 'file-loader',
                         options: {
-                            name: 'fonts/[name].[ext]',
+                            name: 'fonts/[name]-[hash].[ext]',
                             publicPath: '/'
+
                         },
                     }
                 ]
             },
+
             {
                 test: /\.html$/,
                 include: path.resolve(__dirname, './src/html/includes'),
@@ -144,14 +149,14 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-          }),
+        }),
         new CopyPlugin([
             {
-             from: "src/images", to: "images"
+                from: "src/images", to: "images"
             },
             {
                 from: "src/fonts", to: "fonts"
-               }
+            }
 
         ]),
         new MiniCssExtractPlugin({
