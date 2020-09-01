@@ -1,6 +1,0 @@
-<Limit GET POST>
-	require valid-user
-</Limit>
-AuthType Basic
-AuthName "webstat"
-AuthUserFile /home/h68869/data/etc/almaz-ok.kiev.ua.stat.passwd

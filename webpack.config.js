@@ -118,7 +118,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'fonts/[name]-[hash].[ext]',
+                            name: 'fonts/[name].[ext]',
                             publicPath: '/'
 
                         },
