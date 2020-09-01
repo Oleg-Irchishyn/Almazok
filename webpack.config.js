@@ -116,11 +116,10 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader?limit=10000',
             options: {
-              name: 'fonts/[name]-[hash].[ext]',
+              name: 'fonts/[name].[ext]',
               publicPath: '/'
-
             },
           }
         ]
