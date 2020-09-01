@@ -1,0 +1,22 @@
+<% var data = {
+    title: "Алмазне свердління"
+  }; %>
+  <%= _.template(require('./../includes/head.html').default)(data) %>
+  <body class="noselect">
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N42JS92"
+       height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <%= _.template(require('./../includes/ukr-site/header.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/hero-screen.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/about-us.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/our_benefits.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/diamond-drilling-benefits.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/prices.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/order-procedure.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/portfolio.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/clients.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/footer.html').default)(data) %>
+    <%= _.template(require('./../includes/ukr-site/forms/form.html').default)(data) %>
+    <div class="to-top animated fadeInDown fast"></div>
+    <%= _.template(require('./../includes/ukr-site/page_end.html').default)(data) %>
