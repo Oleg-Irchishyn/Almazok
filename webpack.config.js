@@ -101,31 +101,29 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|jpe?g|gif|svg|webp|ico)$/i,
+                test: /\.(jpe?g|png|svg|webp|ico)$/i,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader?limit=1000',
                         options: {
-                            name: 'images/[name]-[hash].[ext]',
+                            name: 'images/[name].[ext]',
                             publicPath: '/'
                         },
-                    },
-                ],
+                    }
+                ]
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: 'url-loader?limit=1000',
                         options: {
                             name: 'fonts/[name].[ext]',
                             publicPath: '/'
-
                         },
                     }
                 ]
             },
-
             {
                 test: /\.html$/,
                 include: path.resolve(__dirname, './src/html/includes'),
