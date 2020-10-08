@@ -1,8 +1,12 @@
 // LIBS
 $fa-font-display: swap;
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/brands";
+
+@import "../js/components/libs/fontawesome/scss/mixins";
+@import "../js/components/libs/fontawesome/scss/variables";
+@import "../js/components/libs/fontawesome/scss/brands.scss";
+@import "../js/components/libs/fontawesome/scss/fontawesome.scss";
+@import "../js/components/libs/fontawesome/scss/regular.scss";
+@import "../js/components/libs/fontawesome/scss/solid.scss";
 @import "~bootstrap/scss/bootstrap";
 @import "../js/components/libs/animate.css/animate.min.css";
 @import "../js/components/libs/fancybox/dist/jquery.fancybox.min.css";
