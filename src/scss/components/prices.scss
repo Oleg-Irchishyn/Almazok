@@ -153,13 +153,12 @@
 }
 
 .to-price-look::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f063";
+  content: "\21E5";
   position: absolute;
-  top: 0;
+  top: calc(0% - 3px);
   left: calc(100% + 20px);
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 1;
   transition: 0.4s;
   color: orange;
-  transform: rotate(270deg);
 }
