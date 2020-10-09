@@ -14,6 +14,11 @@
     min-height: 98px;
     @include xs-devices {
       justify-content: space-evenly;
+      min-height: 530px;
+    }
+    @include sm-devices {
+      justify-content: space-evenly;
+      min-height: 530px;
     }
     @include md-devices {
       min-height: 260px;
@@ -171,6 +176,9 @@
   display: inline-block;
   padding: 10px;
   cursor: pointer;
+  @include md-devices {
+    width: 100%;
+  }
 }
 
 .main_nav ul > li:last-of-type {
@@ -395,9 +403,11 @@
       }
       .page_header_location {
         margin: 2vh 0 4vh 0;
+        width: 50%;
       }
       .page_header_contacts {
         margin: 0 0 4vh 0;
+        width: 50%;
       }
     }
   }

@@ -75,7 +75,7 @@
   background: url("../../images/topArrow.png") #253c68 no-repeat center;
   transition: 0.2s;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 999;
   &:hover,
   &:focus {
     background: url("../../images/topArrow.png") orange no-repeat center;
