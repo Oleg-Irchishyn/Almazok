@@ -380,6 +380,7 @@
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .page_header {
     .page_header_top {
+      min-height: 98px;
       .main_nav {
         width: 100%;
         ul {
