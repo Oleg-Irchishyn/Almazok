@@ -201,6 +201,16 @@
   }
 }
 
+.main_nav ul > li > a.info {
+  color: #d64851;
+  animation: importantColor 2s infinite;
+  &:focus,
+  &:hover {
+    color:  #d64851;
+    animation: none;
+  }
+}
+
 .page_header_location {
   display: flex;
   flex-wrap: wrap;

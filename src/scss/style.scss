@@ -59,6 +59,18 @@ $font-main-second: "Roboto Slab", sans-serif;
   }
 }
 
+@keyframes importantColor {
+  0% {
+    color: orange;
+  }
+  50% {
+    color: #d64851;
+  }
+  100% {
+    color: orange;
+  }
+}
+
 // COMPONENTS
 @import "./components/header";
 @import "./components/burger_menu";
@@ -70,6 +82,7 @@ $font-main-second: "Roboto Slab", sans-serif;
 @import "./components/order_procedure";
 @import "./components/portfolio";
 @import "./components/clients";
+@import "./components/infoblock.scss";
 @import "./components/footer";
 @import "./components/loader_overlay";
 @import "./components/forms";

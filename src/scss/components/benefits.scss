@@ -50,6 +50,8 @@
     font-size: 18px;
     color: #fff;
     margin: 0;
+    width: 100%;
+    word-break: break-word;
     @include xs-devices {
       text-align: center;
     }
@@ -103,12 +105,16 @@
       color: #fff;
       font-family: inherit;
       margin: 0 0 20px 0;
+      width: 100%;
+      word-break: break-word;
     }
     p {
       font-size: 18px;
       color: #fff;
       font-family: inherit;
       margin: 0;
+      width: 100%;
+      word-break: break-word;
     }
     &:hover {
       transform: translateX(20px);

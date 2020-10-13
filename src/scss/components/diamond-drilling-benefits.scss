@@ -109,9 +109,13 @@
     h3 {
         font-family: inherit;
         margin: 0 0 10px 0;
+        width: 100%;
+        word-break: break-word;
     }
     span {
         font-family: $font-main-second;
+        width: 100%;
+        word-break: break-word;
     }
     &:hover {
         transform: translateY(20px);
@@ -403,6 +407,7 @@
     color: #fff;
     line-height: 46px;
     transition: 0.2s ease;
+    word-break: break-word;
     cursor: pointer;
     @include xs-devices {
         min-width: 290px;

@@ -64,6 +64,8 @@
         margin: 10px 0 10px 0;
         color: #253c68;
         z-index: 2;
+        word-break: break-word;
+        width: 100%;
       }
       p {
         font-size: 16px;
@@ -73,6 +75,8 @@
         margin: 0;
         color: #253c68;
         z-index: 2;
+        word-break: break-word;
+        width: 100%;
       }
       &:hover::before,
       &:hover::after,

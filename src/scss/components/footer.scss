@@ -24,6 +24,8 @@
     max-width: 600px;
     font-family: $font-main;
     font-size: 20px;
+    word-break: break-word;
+    width: 100%;
     @include xs-devices {
       text-align: center;
       max-width: 100%;
@@ -246,14 +248,17 @@
   @include xs-devices {
     top: calc(0px - 15px);
     left: calc(0% - 10px);
+    transform: scale(0.7);
   }
   @include sm-devices {
     top: calc(0px - 15px);
     left: calc(0% - 10px);
+    transform: scale(0.7);
   }
   @include md-devices {
     top: calc(0px - 15px);
     left: calc(0% - 10px);
+    transform: scale(0.7);
   }
 }
 
@@ -268,14 +273,17 @@
   @include xs-devices {
     top: calc(0px + 5px);
     left: calc(0% - 45px);
+    transform: scale(0.7);
   }
   @include sm-devices {
     top: calc(0px + 5px);
     left: calc(0% - 45px);
+    transform: scale(0.7);
   }
   @include md-devices {
     top: calc(0px + 5px);
     left: calc(0% - 45px);
+    transform: scale(0.7);
   }
 }
 
@@ -290,13 +298,16 @@
   @include xs-devices {
     top: calc(0px + 5px);
     left: calc(0% - 70px);
+    transform: scale(0.7);
   }
   @include sm-devices {
     top: calc(0px + 5px);
     left: calc(0% - 70px);
+    transform: scale(0.7);
   }
   @include md-devices {
     top: calc(0px + 5px);
     left: calc(0% - 70px);
+    transform: scale(0.7);
   }
 }

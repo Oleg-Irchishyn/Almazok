@@ -11,6 +11,8 @@
     font-size: 41px;
     margin-bottom: 0;
     font-family: inherit;
+    width: 100%;
+    word-break: break-word;
     @include xs-devices {
       margin-bottom: 20px;
     }
@@ -19,6 +21,8 @@
     font-size: 22px;
     white-space: pre-line;
     font-family: $font-main;
+    width: 100%;
+    word-break: break-word;
     @include xs-devices {
       white-space: normal;
     }
@@ -48,6 +52,7 @@
   color: #fff;
   line-height: 46px;
   transition: 0.2s;
+  word-break: break-word;
   cursor: pointer;
   @include xs-devices {
     min-width: 290px;
